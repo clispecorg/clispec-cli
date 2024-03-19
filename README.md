@@ -1,3 +1,5 @@
-# clispec-cli
+# The interpreter of the open CLI specification
 
-Оригинальный интерпретатор CLISpec
+## Installation
+
+## Usage

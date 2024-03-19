@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "gen_schema_types": "scripts/gen_schema_types.ts",
+    "compile": "deno compile --output dist/bin/clispec --allow-net --allow-run --allow-env --allow-read --allow-write src/cli.ts",
+    "bin_link": "mkdir -p dist/bin && cd dist/bin && rm -f clispec && ln -s ../../src/cli.ts clispec"
+  }
+}
