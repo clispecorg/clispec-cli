@@ -1,3 +1,4 @@
+#!/usr/bin/env -S deno run -q -A
 import { Command, CompletionsCommand, ValidationError } from "./deps/cliffy.ts";
 import {
   CliDescription,
