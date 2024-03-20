@@ -2,7 +2,7 @@
   "scripts": {
     "deno_update": "proto pin deno $(proto list-remote deno | tail -n 1)",
     "gen_schema_types": "scripts/gen_schema_types.ts",
-    "compile": "deno compile --output dist/bin/clispec --allow-net --allow-run --allow-env --allow-read --allow-write src/cli.ts",
+    "compile": "rm -f dist/bin/clispec && deno compile --output dist/bin/clispec -A src/cli.ts",
     "dev_bin_shim": "mkdir -p dist/bin && cd dist/bin && ln -s -f ../../scripts/clispec.sh clispec"
   }
 }
