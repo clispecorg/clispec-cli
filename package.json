@@ -2,7 +2,8 @@
   "scripts": {
     "deno_update": "proto pin deno $(proto list-remote deno | tail -n 1)",
     "gen_schema_types": "scripts/gen_schema_types.ts",
-    "compile": "rm -f dist/bin/clispec && deno compile --output dist/bin/clispec -A src/cli.ts",
-    "dev_bin_shim": "mkdir -p dist/bin && cd dist/bin && ln -s -f ../../scripts/clispec.sh clispec"
+    "build": "./scripts/build.sh",
+    "compile": "rm -f _temp/bin/clispec && deno compile --output dist/bin/clispec -A src/cli.ts",
+    "dev_bin_shim": "mkdir -p _temp/bin && cd dist/bin && ln -s -f ../../scripts/clispec.sh clispec"
   }
 }
