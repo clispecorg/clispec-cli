@@ -1,7 +1,8 @@
 on:
-  push:
-    branches:
-      - '**'
+  workflow_dispatch:
+#  push:
+#    branches:
+#      - '**'
 
 name: release-please
 jobs:
